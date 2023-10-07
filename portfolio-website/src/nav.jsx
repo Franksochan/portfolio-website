@@ -1,4 +1,4 @@
-import './header.css'
+import './nav.css'
 
 export const Header = () => {
   return (
