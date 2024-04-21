@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  height: 100vh;
+  font-family:'Karla', sans-serif;
+}
+html {
+  width: 100%;
+}
+body {
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,104 @@
+.about-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  overflow: hidden;
+}
+
+.right-container {
+  height: 100%;
+  flex: 1;
+  flex-shrink: 0;
+  margin-right: 12px;
+}
+
+.about {
+  font-family: 'Karla', sans-serif;
+  font-weight: 700;
+  text-shadow: 1px 1px 1px #323232;
+  color: #323232;
+  text-align: start;
+  font-size: 2rem;
+  white-space: nowrap;
+  margin-top: 10px;
+}
+
+.my-infos p {
+  font-weight: bold;
+}
+
+.right-container p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  text-align: justify;
+  font-family: 'Karla', sans-serif;
+  font-size: 1.2rem;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out;
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.left-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 550px;
+}
+
+.web-dev-aspirant {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.image {
+  height: 570px;
+  max-width: 100%;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.image:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 1138px) {
+.about-container {
+  flex-direction: column;
+}
+
+.about {
+  text-align: center;
+  font-size: 1.7rem;
+}
+
+.right-container p {
+  font-size: 1rem;
+}
+
+.web-dev-aspirant {
+  font-size: 1rem;
+}
+
+.image {
+  height: 400px;
+}
+}
+
+
